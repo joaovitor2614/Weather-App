@@ -1,0 +1,343 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+// variaveis
+$s-size: 1.2rem;
+$m-size: 1.6rem;
+$l-size: 3.2rem;
+$xl-size: 4.8rem;
+$off-black: #313639;
+$off-white: #f8f8ff;
+$purple: #871F78;
+$light-blue: #0c2027;
+$blue: #3D3064;
+$dark-blue: #00003E;
+$desktop-breakpoint: 45rem;
+// configuração para celular
+.container {
+
+    margin: 0 auto;
+    padding: 0 $m-size;
+
+}
+html {
+    font-size: 50.5%;;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    background: $off-black;
+    overflow: hidden;
+  
+}
+// icons e imagens
+
+
+
+.icon-img {
+    height: 150px;
+    width: 140px;
+    margin: 0 auto;
+}
+// header 
+.header {
+    
+    background: lighten($off-black, 10%);
+    color: white;
+    margin-bottom: 5rem;
+    padding: $s-size 0;
+
+  
+}
+
+.title {
+    font-size: $l-size;
+    margin: 0;
+}
+
+.subtitle {
+    color: $off-white;
+    font-size: $m-size;
+    font-weight: 500;
+    margin: 0;
+}
+
+.widget {
+    max-width: 68rem;
+    margin: 0 auto;
+    margin-top: 0;
+    background: $light-blue;
+    height: 100%;
+  
+    font-size: 3rem;
+   
+}
+
+// temp painel
+.widget-painel {
+    width: 100%;
+     color: $off-white;
+     padding: 1.3rem;
+     display: flex;
+     justify-content: space-between;
+     background: $blue;
+     align-items: center;
+     margin-bottom: $s-size;
+}
+.current-unit {
+    margin: 0
+}
+.date {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.tool-bar {
+    display: flex;
+    flex-direction: row;
+    padding: $m-size;
+    font-size: 2.7rem;
+    
+}
+
+.input-bar {
+
+    color: black;
+    border: none;
+    flex-grow: none;
+    padding: $s-size;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    transition: .4s;
+    color: white;
+    font-size: 1.3rem;
+    
+
+}
+
+.input-bar:after {
+
+    
+    
+    font-size: 1.6rem;
+}
+
+.input-bar:focus {
+
+    
+    
+    font-size: 1.6rem;
+}
+
+.input-bar:focus {
+    color: black;
+    background: white;
+    outline: none;
+}
+
+.button {
+    color: white;
+    background: $purple;
+    border: none;
+    cursor: pointer;
+
+    margin: 0 0.8rem;
+    margin-left: 0;
+    padding: $s-size 0.8rem;
+    font-size: 1.25rem;
+    transition: 0.4s;
+    border-bottom: 5px solid darken($color: $purple, $amount: 10%);
+    display: inline;
+}
+.button:hover {
+    color: darkorange;
+}
+
+.fa-search {
+    cursor: pointer;
+    transition: 0.4s;
+    
+  
+    visibility: hidden;
+}
+.fa-search:hover {
+   color: darkorange;
+}
+
+// widget body 
+.widget-body {
+    margin: 0 auto;
+    display: flex;
+  
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    width: 55%;
+}
+
+.temp-value {
+    text-shadow: 2px 2px #ff0000;
+    font-size: 3.3rem;
+    margin-bottom: $s-size;
+}
+// configuração para pc 
+@media (min-width: $desktop-breakpoint) {
+    
+    .container {
+        max-width: 90rem;
+        margin: 0 auto;
+        padding: 0 $m-size;
+    
+    }
+    html {
+        font-size: 62.5%;;
+    }
+    
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6rem;
+        background: $off-black;
+        overflow: hidden;
+      
+    }
+    // icons e imagens
+    
+    
+    
+    .icon-img {
+        height: 170px;
+        width: 240px;
+        margin: 0 auto;
+    }
+    // header 
+    .header {
+        
+        background: lighten($off-black, 10%);
+        color: white;
+        margin-bottom: 2rem;
+        padding: $s-size 0;
+        text-align: center;
+    
+      
+    }
+    
+    .title {
+        font-size: $l-size;
+        margin: 0;
+    }
+    
+    .subtitle {
+        color: $off-white;
+        font-size: $m-size;
+        font-weight: 500;
+        margin: 0;
+    }
+    
+    .widget {
+        
+        
+        margin-top: 0;
+        background: $light-blue;
+        height: 65rem;
+        margin: 0 auto;
+        width: 68rem;
+    }
+    
+    // temp painel
+    .widget-painel {
+        width: 64.3rem;
+         color: $off-white;
+         padding: 1.9rem;
+         display: flex;
+         justify-content: space-between;
+         background: $blue;
+         align-items: center;
+         margin-bottom: $s-size;
+    }
+    .current-unit {
+        margin: 0
+    }
+    .date {
+        margin: 0;
+    }
+    
+    .tool-bar {
+        display: flex;
+        flex-direction: row;
+        padding: $m-size;
+        font-size: 2rem;
+        
+    }
+    
+    .input-bar {
+    
+        color: black;
+        border: none;
+        flex-grow: none;
+        padding: $s-size;
+        width: 25rem;
+        background: rgba(255, 255, 255, 0.9);
+        transition: .4s;
+        color: white;
+        font-size: 1.8rem;
+        margin: 0 $s-size;
+    
+    }
+    
+    .input-bar:focus {
+        color: black;
+        background: white;
+        outline: none;
+    }
+    
+    .button {
+        color: white;
+        background: $purple;
+        border: none;
+        cursor: pointer;
+        margin: 0 $s-size;
+        padding: $s-size 0.8rem;
+        font-size: 2rem;
+        transition: 0.4s;
+        border-bottom: 5px solid darken($color: $purple, $amount: 10%);
+       
+    }
+    .button:hover {
+        color: darkorange;
+    }
+    
+    .fa-search {
+        cursor: pointer;
+        transition: 0.4s;
+        margin-right: $m-size;
+        align-self: center;
+        visibility: visible;
+    }
+    .fa-search:hover {
+       color: darkorange;
+    }
+    
+    // widget body 
+    .widget-body {
+        margin: 0 auto;
+        display: flex;
+      
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        text-align: center;
+        color: white;
+        font-size: 2.5rem;
+    }
+    
+    .temp-value {
+        text-shadow: 2px 2px #ff0000;
+        font-size: 3.3rem;
+        margin-bottom: $s-size;
+    }
+}

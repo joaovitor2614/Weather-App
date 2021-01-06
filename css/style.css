@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.container {
+  margin: 0 auto;
+  padding: 0 1.6rem;
+}
+
+html {
+  font-size: 50.5%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  background: #313639;
+  overflow: hidden;
+}
+
+.icon-img {
+  height: 150px;
+  width: 140px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #495054;
+  color: white;
+  margin-bottom: 5rem;
+  padding: 1.2rem 0;
+}
+
+.title {
+  font-size: 3.2rem;
+  margin: 0;
+}
+
+.subtitle {
+  color: #f8f8ff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.widget {
+  max-width: 68rem;
+  margin: 0 auto;
+  margin-top: 0;
+  background: #0c2027;
+  height: 100%;
+  font-size: 3rem;
+}
+
+.widget-painel {
+  width: 100%;
+  color: #f8f8ff;
+  padding: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  background: #3D3064;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.current-unit {
+  margin: 0;
+}
+
+.date {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.tool-bar {
+  display: flex;
+  flex-direction: row;
+  padding: 1.6rem;
+  font-size: 2.7rem;
+}
+
+.input-bar {
+  color: black;
+  border: none;
+  flex-grow: none;
+  padding: 1.2rem;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  transition: .4s;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.input-bar:after {
+  font-size: 1.6rem;
+}
+
+.input-bar:focus {
+  font-size: 1.6rem;
+}
+
+.input-bar:focus {
+  color: black;
+  background: white;
+  outline: none;
+}
+
+.button {
+  color: white;
+  background: #871F78;
+  border: none;
+  cursor: pointer;
+  margin: 0 0.8rem;
+  margin-left: 0;
+  padding: 1.2rem 0.8rem;
+  font-size: 1.25rem;
+  transition: 0.4s;
+  border-bottom: 5px solid #5e1553;
+  display: inline;
+}
+
+.button:hover {
+  color: darkorange;
+}
+
+.fa-search {
+  cursor: pointer;
+  transition: 0.4s;
+  visibility: hidden;
+}
+
+.fa-search:hover {
+  color: darkorange;
+}
+
+.widget-body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  width: 55%;
+}
+
+.temp-value {
+  text-shadow: 2px 2px #ff0000;
+  font-size: 3.3rem;
+  margin-bottom: 1.2rem;
+}
+
+@media (min-width: 45rem) {
+  .container {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    background: #313639;
+    overflow: hidden;
+  }
+  .icon-img {
+    height: 170px;
+    width: 240px;
+    margin: 0 auto;
+  }
+  .header {
+    background: #495054;
+    color: white;
+    margin-bottom: 2rem;
+    padding: 1.2rem 0;
+    text-align: center;
+  }
+  .title {
+    font-size: 3.2rem;
+    margin: 0;
+  }
+  .subtitle {
+    color: #f8f8ff;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0;
+  }
+  .widget {
+    margin-top: 0;
+    background: #0c2027;
+    height: 65rem;
+    margin: 0 auto;
+    width: 68rem;
+  }
+  .widget-painel {
+    width: 64.3rem;
+    color: #f8f8ff;
+    padding: 1.9rem;
+    display: flex;
+    justify-content: space-between;
+    background: #3D3064;
+    align-items: center;
+    margin-bottom: 1.2rem;
+  }
+  .current-unit {
+    margin: 0;
+  }
+  .date {
+    margin: 0;
+  }
+  .tool-bar {
+    display: flex;
+    flex-direction: row;
+    padding: 1.6rem;
+    font-size: 2rem;
+  }
+  .input-bar {
+    color: black;
+    border: none;
+    flex-grow: none;
+    padding: 1.2rem;
+    width: 25rem;
+    background: rgba(255, 255, 255, 0.9);
+    transition: .4s;
+    color: white;
+    font-size: 1.8rem;
+    margin: 0 1.2rem;
+  }
+  .input-bar:focus {
+    color: black;
+    background: white;
+    outline: none;
+  }
+  .button {
+    color: white;
+    background: #871F78;
+    border: none;
+    cursor: pointer;
+    margin: 0 1.2rem;
+    padding: 1.2rem 0.8rem;
+    font-size: 2rem;
+    transition: 0.4s;
+    border-bottom: 5px solid #5e1553;
+  }
+  .button:hover {
+    color: darkorange;
+  }
+  .fa-search {
+    cursor: pointer;
+    transition: 0.4s;
+    margin-right: 1.6rem;
+    align-self: center;
+    visibility: visible;
+  }
+  .fa-search:hover {
+    color: darkorange;
+  }
+  .widget-body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+  }
+  .temp-value {
+    text-shadow: 2px 2px #ff0000;
+    font-size: 3.3rem;
+    margin-bottom: 1.2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -3,26 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    
+    <title>Weather App</title>
 </head>
 <body>
-    
-    <div class="app-wrapper">
-        <div class="input-wrapper">
-            <input placeholder="Insira um cidade..." id="searchbox"></input><img class="clean-input" src="clearInput.png">
+       <header class="header">
+       
+            <div class="container">
+                <h1 class="title">Weather App</h1>
+                <h3 class="subtitle">An efficient meteorological predictor</h3>
+            </div>
+            
+            
+       </header>
+       <div class="widget">
+            <div class="container widget-painel">
+                
+                <div id="date" class="date"></div>
+            </div>
+            <div class="tool-bar">
+                <input class="input-bar" type="text" id="inputField" placeholder="Insira uma cidade..">
+                <i id="searchBtn" class="fas fa-search fa-2x"></i>
+                <button id="celsiusBtn" class="button">Celsius</button>
+                <button id="fahrenheitBtn" class="button">Fahrenheit</button>
+                <button id="kelvinBtn" class="button">Kelvin</button>
+            </div>
+        
+            <div class="widget-body">
+                <div class="city-name" id="cityName"></div>
+                <div class="icon-wrapper">
+                    <img id="weatherIcon" class="icon-img" src="./icons/unknown.png">
+                </div>
+                
+                <div id="tempValue" class="temp-value"></div>
+                <div id="tempDes" class="temp-description"></div>
+                <p id="minMax" class="min-max"><span></span><span></span></p>
+            </div>
+            
         </div>
-        
-        <p  class="p-date" id="date">16 de janeiro de 2020</p>
-        <p id="place">Rio de Janeiro, Brasil</p>
-        <div class="weather-icon">
-            <img src="./icons/unknown.png">
-        </div>
-        
-        
-        <p id="temp-value" class="p-temp" id="tempValue">16ºC</p>
-        <p id="temp-description" class="p-dpt" id="weather-description">Nublado</p>
-    </div>
+           
+           
+      
 </body>
-<script src="main.js"></script>
+<script src="./main.js"></script>
 </html>
